@@ -125,6 +125,9 @@
     letter-spacing: 0.03em;
     color: var(--secondary-txt-col);
 }
+.section-team-bg {
+    background-color: var(--block-bg-col);
+}
 .activities,
 .team {
     font-family: var(--main-font);

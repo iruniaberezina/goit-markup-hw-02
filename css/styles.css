@@ -37,22 +37,22 @@
 .header {
     background-color: var(--main-bg-col);
 }
-.header .link {
-    font-family: var(--secondary-font);
+.link {
+    font-family: var(--main-font);
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--main-txt-col);
 }
-.header .link:hover, 
-.header .link:focus {
+.link:hover, 
+.link:focus {
     color: var(--accent-txt-col);
 }
-.header.list:active{
+.list:active { 
     color: var(--accent-txt-col);
 }
-.hearder .company-name {
+.company-name {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -63,6 +63,14 @@
 .web {
     color: var(--accent-txt-col);
 }
+.list-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 /14);
+    letter-spacing: 0.02em;
+    color: var(--main-txt-col);
+
+}
 .mail.link,
 .tel.link {
     font-family: var(--main-font);
@@ -71,8 +79,8 @@
 
 /* Main */
 
-.logo .logo-btn {
-    font-family: inherit;
+.logo-btn {
+    font-family: var(--main-txt-col);
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 /16);
@@ -89,7 +97,7 @@
     
     cursor: pointer;
 }
-.logo .logo-name {
+.logo-name {
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -112,9 +120,8 @@
     color: var(--main-txt-col);
 }
 .text {
-    font-weight: 400;
     font-size: 14px;
-    line-height: cal(24 / 14);
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--secondary-txt-col);
 }
@@ -139,7 +146,6 @@
 }
 .list-item-position {
     font-family: var(--main-font);   
-    font-weight: 400;
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
@@ -157,7 +163,6 @@
 }
 .footer .link {
     font-family: var(--main-font);
-    font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;    
@@ -179,20 +184,21 @@
 .footer .web {
     color: var(--accent-txt-col);
 }
-.footer.address {
+.footer .address {
     font-family: var(--main-font);
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--light-txt-col);
 
 }
+
+/* Portfolio */ 
 .project {
     font-family: var(--main-font);
 }
-.project .list-project {
+.list-project {
     font-family: inherit;
     font-weight: 700;
     font-size: 18px;
@@ -200,9 +206,8 @@
     letter-spacing: 0.06em;
     color: var(--main-txt-col);
 }
-.project .list-project-name {
+.list-project-name {
     font-family: inherit;
-    font-weight: 400;
     font-size: 16px;
     line-height: 3calc(30 / 18);
     letter-spacing: 0.03em;

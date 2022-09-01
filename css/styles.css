@@ -28,14 +28,56 @@
     font-style: normal;
     
 }
-.list, .list-contact {
+.list, .list-contact, .group, .list-contact-footer, .link {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+img {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    outline: 2px solid #2196F3;
+    outline-offset: -2px;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* Hearder */
 
 .header {
     background-color: var(--main-bg-col);
+}
+.header-container {
+    display: flex;
+}
+.main-nav {
+    display: flex;
+    margin-right: auto;
+}
+
+.header-list {
+    display: flex;
+    gap: 50px;
+}
+.list-contact {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
 }
 .link {
     font-family: var(--main-font);
@@ -53,6 +95,11 @@
     color: var(--accent-txt-col);
 }
 .company-name {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 93px;
+    align-items: center;
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -64,6 +111,10 @@
     color: var(--accent-txt-col);
 }
 .list-item {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 /14);
@@ -76,17 +127,29 @@
     font-family: var(--main-font);
     color: var(--secondary-txt-col);
 }
+.mail {
+    margin-right: 50px;
+}
 
 /* Main */
-
+.logo-container {
+    padding-top: 106px;
+    padding-bottom: 106px;
+    padding-left: 237px;
+    padding-right: 237px;
+    justify-content: center;
+}
 .logo-btn {
+   
+    padding: 10px 32px;
     font-family: var(--main-txt-col);
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 /16);
-    display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    
     letter-spacing: 0.06em;
     
     color: var(--light-txt-col);
@@ -98,6 +161,7 @@
     cursor: pointer;
 }
 .logo-name {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -109,7 +173,10 @@
 .logo {
     background-color: var(--footer-bg-col);
 }
-
+.features-container {
+    display: flex;
+    gap: 30px;
+}
 .adventages {
     font-family: var(--main-font);
     font-weight: 700;
@@ -118,6 +185,16 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-txt-col);
+}
+.list-adventages {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.list-activities {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
 }
 .text {
     font-size: 14px;
@@ -130,6 +207,7 @@
 }
 .activities,
 .team {
+    margin-bottom: 50px;
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 36px;
@@ -137,6 +215,11 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txt-col);
+}
+.list-team-members {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
 }
 .list-item-name {
     font-family: var(--main-font);
@@ -164,6 +247,10 @@
 .footer {
     background-color: var(--footer-bg-col);
 }
+.container-flooter {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .footer .link {
     font-family: var(--main-font);
     font-size: 14px;
@@ -171,12 +258,20 @@
     letter-spacing: 0.03em;    
     color: var(--light-txt-col);
 }
+.company-name-footer {
+    margin-bottom: 20px;
+}
 .footer .mail.link,
 .footer .tel.link {
+    
     font-family: var(--main-font);
     color: var(--secondary-txt-col);
 }
-.footer .company-name {
+.address {
+    margin-top: 20px;
+}
+.footer .company-name-footer {
+    
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -197,9 +292,24 @@
 
 }
 
+
 /* Portfolio */ 
 .project {
     font-family: var(--main-font);
+
+}
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+   
+}
+.list-cotainer {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 .list-project {
     font-family: inherit;

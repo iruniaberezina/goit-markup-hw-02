@@ -38,19 +38,20 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 img {
+    max-width: 100%;
+    height: auto;
     display: block;
 }
 
 .container {
+    box-sizing: border-box;
     width: 1200px;
-
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 2px solid #2196F3;
-    outline-offset: -2px;
+
 }
 .section {
     padding-top: 94px;
@@ -75,17 +76,18 @@ img {
 }
 .list-contact {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    gap: 50px;
     align-items: center;
 }
 .link {
+
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--main-txt-col);
+    display: block;
 }
 .link:hover, 
 .link:focus {
@@ -96,8 +98,8 @@ img {
 }
 .company-name {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     margin-right: 93px;
     align-items: center;
     font-family: var(--secondary-font);
@@ -112,12 +114,11 @@ img {
 }
 .list-item {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+
     align-items: center;
     font-weight: 500;
     font-size: 14px;
-    line-height: calc(16 /14);
+    line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--main-txt-col);
 
@@ -127,18 +128,22 @@ img {
     font-family: var(--main-font);
     color: var(--secondary-txt-col);
 }
-.mail {
-    margin-right: 50px;
+.mail:hover, 
+.mail:focus {
+    color: var(--accent-txt-col);
 }
-
+.mail:active { 
+    color: var(--accent-txt-col);
+}
+.tel:hover, 
+.tel:focus {
+    color: var(--accent-txt-col);
+}
+.tel:active { 
+    color: var(--accent-txt-col);
+}
 /* Main */
-.logo-container {
-    padding-top: 106px;
-    padding-bottom: 106px;
-    padding-left: 237px;
-    padding-right: 237px;
-    justify-content: center;
-}
+
 .logo-btn {
    
     padding: 10px 32px;
@@ -161,6 +166,9 @@ img {
     cursor: pointer;
 }
 .logo-name {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -170,12 +178,23 @@ img {
     text-transform: uppercase;
     color: var(--light-txt-col);
 }
-.logo {
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--footer-bg-col);
+    text-align: center;
 }
-.features-container {
-    display: flex;
-    gap: 30px;
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .adventages {
     font-family: var(--main-font);
@@ -189,7 +208,10 @@ img {
 .list-adventages {
     display: flex;
     gap: 30px;
-    justify-content: space-between;
+   
+}
+.activities-section{
+    padding-top: 0;
 }
 .list-activities {
     display: flex;
@@ -197,10 +219,16 @@ img {
     justify-content: space-between;
 }
 .text {
+    margin-top: 10px;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--secondary-txt-col);
+}
+.person{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 .section-team-bg {
     background-color: var(--block-bg-col);
@@ -222,6 +250,7 @@ img {
     justify-content: space-between;
 }
 .list-item-name {
+    margin: 10px;
     font-family: var(--main-font);
     font-weight: 500;
     font-size: 16px;
@@ -245,12 +274,11 @@ img {
 /* Footer */
 
 .footer {
-    background-color: var(--footer-bg-col);
-}
-.container-flooter {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: var(--footer-bg-col);
 }
+
 .footer .link {
     font-family: var(--main-font);
     font-size: 14px;
@@ -267,9 +295,7 @@ img {
     font-family: var(--main-font);
     color: var(--secondary-txt-col);
 }
-.address {
-    margin-top: 20px;
-}
+
 .footer .company-name-footer {
     
     font-family: var(--secondary-font);
@@ -283,6 +309,7 @@ img {
     color: var(--accent-txt-col);
 }
 .footer .address {
+    margin: 9px;
     font-family: var(--main-font);
     font-style: normal;
     font-size: 14px;
@@ -291,12 +318,14 @@ img {
     color: var(--light-txt-col);
 
 }
-
+.footer .mail{
+    margin: 9px;
+}
 
 /* Portfolio */ 
 .project {
     font-family: var(--main-font);
-
+    margin-bottom: 94px;
 }
 .group {
     display: flex;
@@ -307,7 +336,7 @@ img {
 }
 .list-cotainer {
     display: flex;
-    gap: 30px;
+    gap: 8px;
     justify-content: center;
     margin-bottom: 50px;
 }
@@ -322,8 +351,18 @@ img {
 .list-project-name {
     font-family: inherit;
     font-size: 16px;
-    line-height: 3calc(30 / 18);
+    line-height: calc(30 / 18);
     letter-spacing: 0.03em;
 
     color: var(--secondary-txt-col)
+}
+.box-list{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+    border-left: solid #EEEEEE;
+    border-right: solid #EEEEEE;
+    border-bottom: solid #EEEEEE;
 }
